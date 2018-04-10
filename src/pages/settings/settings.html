@@ -1,0 +1,51 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton class="nav-bar">
+    <button ion-button icon-only clear (click)="back()" class="left-btn">
+      <ion-icon name="md-arrow-back"></ion-icon>
+    </button>
+    Settings
+    <button ion-button icon-only clear class="right-btn" style="visibility: hidden">
+      <ion-icon name="ios-information-circle-outline"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div id="navigation">
+    <button (click)="gotoAbout()"><img src="assets/images/arrow-frwd.png">About Us</button>
+    <button>
+      <ion-toggle color="appGreen" checked="true" class="notification-toggle"></ion-toggle>
+      Notifications
+    </button>
+    <!-- <button (click)="gotoTerms()"><img src="assets/images/arrow-frwd.png">Term of Use</button> -->
+    <button (click)="gotoPrivacy()"><img src="assets/images/arrow-frwd.png">Privacy Policy</button>
+    <button (click)="gotoContactfeedback()"><img src="assets/images/arrow-frwd.png">Contact/Feedback</button>
+  </div>
+  <div id="app-version">APP VERSION 1.0.0</div>
+  <div id="like-follow-wrap">
+    <div id="like-follow">
+      <span>Like and Follow FireStore</span>
+      <a href="https://www.facebook.com/firestoresg/"><img style="width:20px; height: auto;" src="assets/images/fb.png"> </a>
+      <a href="https://www.instagram.com/firestoresg/"><img style="width:38px; height: auto;" src="assets/images/in.png"> </a>
+      <a href="https://plus.google.com/109428834491309770089"><img style="width:58px; height: auto;" src="assets/images/gl.png"> </a>
+    </div>
+    <div class="rate-us">
+      <a href="#">
+        <ion-icon name="star-outline"></ion-icon>
+        Like our app? Rate us 5 stars.</a>
+    </div>
+  </div>
+  <div id="app-by">
+    <span>Fire Safety Matters is proudly brought to you by FireStore.</span>
+    <img src="assets/images/fire-store.png" style="width:147px;">
+    <span>Copyright © Active Fire Protection Systems Pte Ltd.</span>
+  </div>
+</ion-content>
+

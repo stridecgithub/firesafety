@@ -1,0 +1,62 @@
+<!--
+  Generated template for the SafetytipsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton class="nav-bar">
+    <button ion-button icon-only clear (click)="gotoSettings()" class="left-btn">
+      <ion-icon name="ios-settings-outline"></ion-icon>
+    </button>
+    Safety Tips
+    <button ion-button icon-only clear class="right-btn" (click)="gotoIntroduction()">
+      <ion-icon name="ios-information-circle-outline"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div id="tips-slider">
+    <ion-slides pager>
+        <ion-slide>
+          <img src="assets/images/tips-slide.jpg" style="width: 100%;">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/images/tips-slide.jpg" style="width: 100%;">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/images/tips-slide.jpg" style="width: 100%;">
+        </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div padding style="font-size: 16px;"><strong>Latest Tips & Articles</strong></div>
+
+  <div id="news-posts">
+    <article class="news-post" padding>
+      <img src="assets/images/tips-post-1.jpg" style="width: 100px">
+      Beat The Summer Heat With Crock Pot Cooking
+      <span>27 Mar 2017</span>
+    </article>
+    <article class="news-post" padding>
+      <img src="assets/images/tips-post-2.jpg" style="width: 100px">
+      The Importance Of Food Elements
+      <span>27 Mar 2017</span>
+    </article>
+    <article class="news-post" padding>
+      <img src="assets/images/tips-post-3.jpg" style="width: 100px">
+      Enhance Your Life By Having A Sense Of Purpose
+      <span>27 Mar 2017</span>
+    </article>
+    <article class="news-post" padding>
+      <img src="assets/images/tips-post-4.jpg" style="width: 100px">
+      Break Through Self Doubt And Fear
+      <span>27 Mar 2017</span>
+    </article>
+  </div>
+
+</ion-content>
+

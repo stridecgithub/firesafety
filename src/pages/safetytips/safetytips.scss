@@ -1,0 +1,14 @@
+page-safetytips {
+  #tips-slider {
+    margin-bottom: 40px;
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+      bottom: -30px;
+    }
+    .swiper-pagination-bullet-active {
+      background: #000000;
+    }
+    .swiper-container {
+      overflow: visible;
+    }
+  }
+}

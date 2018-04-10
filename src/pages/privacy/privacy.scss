@@ -1,0 +1,23 @@
+page-privacy {
+
+}
+body {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: 'Lato', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color:  #696969;
+}
+.page-main h2 {
+    color: #363636;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+ul > li, ol > li {
+    margin-top: 0rem;
+    margin-bottom: 0.9rem;
+}

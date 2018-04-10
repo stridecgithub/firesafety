@@ -1,0 +1,47 @@
+page-home {
+  #welcome-text {
+    text-align: center;
+    font-size: 18px;
+    color: $appGrey;
+    padding-bottom: 10px;
+    span {
+      display: block;
+      font-family: 'Lato-Bold';
+      font-size: 24px;
+      color: $appRed;
+    }
+  }
+  #cta {
+    margin-bottom: 20px;
+    .row {
+      display: flex;
+      flex-direction: row;
+      button {
+        flex: 1;
+        height: 160px;
+        margin: 3px;
+        font-weight: 700;
+        font-size: 18px;
+        padding-top: 20px;
+        text-transform: capitalize !important;
+        span {
+          display: block;
+          line-height: 25px;
+        }
+        &.cta1 {
+          background: linear-gradient(-320deg, #42AC48, #68D46E);
+          padding-top: 35px;
+        }
+        &.cta2 {
+          background: linear-gradient(-320deg, #9F041B, #F5515F);
+        }
+        &.cta3 {
+          background: linear-gradient(-320deg, #166AAA, #31A3D5);
+        }
+        &.cta4 {
+          background: linear-gradient(-320deg, #F76B1C, #FAD961);
+        }
+      }
+    }
+  }
+}

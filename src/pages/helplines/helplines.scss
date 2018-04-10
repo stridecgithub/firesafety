@@ -1,0 +1,58 @@
+page-helplines {
+  .helpline-intro {
+    font-size: 16px;
+    color: #000000;
+    padding: 30px 15px;
+  }
+  #sos-msg {
+    background: $appRed;
+    padding: 25px 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 48px !important;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    text-transform: none;
+    .sos {
+      font-size: 18px;
+      display: block;
+      font-weight: 400;
+      padding-top: 4px;
+    }
+    ion-icon {
+      font-size: 45px;
+    }
+  }
+  .helpline {
+    display: block;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: #c7c7c7 1px solid;
+    ion-icon {
+      color: $appRed;
+      font-size: 45px;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: $appGrey;
+      display: block;
+    }
+    &.secondary-phone {
+      font-size: 32px;
+      background: #FAFAFA;
+      ion-icon {
+        font-size: 30px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+}

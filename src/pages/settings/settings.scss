@@ -1,0 +1,62 @@
+page-settings {
+  ion-content {
+    background: #FAFAFA !important;
+  }
+  .scroll-content {
+    margin-bottom: 0 !important;
+  }
+  #navigation {
+    background: #ffffff;
+    border-top: #979797 1px solid;
+    border-bottom: #979797 1px solid;
+    margin-top: 30px;
+    padding: 0 17px;
+    button {
+      text-transform: capitalize !important;
+      font-size: 16px;
+      color: $appGrey;
+      padding: 0;
+      text-align: left !important;
+      width: 100%;
+      line-height: 45px;
+      background: none;
+      border-bottom: #c7c7c7 1px solid;
+      img {
+        float: right !important;
+        width: 13px;
+        margin-top: 10px;
+      }
+      &:last-child {
+        border: none;
+      }
+      .notification-toggle {
+        float: right;
+        padding: 15px 0;
+      }
+    }
+  }
+  #app-version {
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 30px 17px 7px;
+    color: $appGrey;
+  }
+  #app-by {
+    padding: 10px;
+    text-align: center;
+    font-size: 11px;
+    color: $appGrey;
+    span {
+      display: block;
+      &:first-child {
+        padding-bottom: 10px;
+      }
+    }
+    img {
+      margin-bottom: 15px;
+    }
+  }
+  .toggle-ios {
+    padding: 6px 0 !important;
+  }
+}

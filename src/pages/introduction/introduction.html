@@ -1,0 +1,119 @@
+<!--
+  Generated template for the IntroductionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton class="nav-bar">
+    <button ion-button icon-only clear (click)="back()" class="left-btn">
+      <ion-icon name="md-arrow-back"></ion-icon>
+    </button>
+    Our Work
+    <button ion-button icon-only clear class="right-btn" style="visibility: hidden">
+      <ion-icon name="ios-information-circle-outline"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+
+  <div id="tabs">
+    <ion-segment [(ngModel)]="tabs">
+      <ion-segment-button value="introduction">
+        Introduction
+      </ion-segment-button>
+      <ion-segment-button value="portfolio">
+        Portfolio
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+
+  <div [ngSwitch]="tabs">
+
+    <div *ngSwitchCase="'introduction'">
+
+      <img src="assets/images/introduction1.jpg" style="width: 100%">
+
+      <div style="text-align: center; padding-top: 5px;"><img src="assets/images/activefire.png" style="width: 250px">
+      </div>
+
+
+      <div padding>
+        <p>Active Fire, established since 2001, is a leading total solutions provider for planning, designing and
+          implementing turnkey fire protection systems.</p>
+
+        <p>We take pride in the ability to imprint our knowledge and expertise throughout the entire life-cycle of a
+          fire
+          protection system implementation: from planning and design, to installation, validation, and service and
+          maintenance.</p>
+      </div>
+
+      <div style="text-align: center; padding-top: 5px;"><img src="assets/images/5pillars.png" style="width: 300px">
+      </div>
+
+
+      <div padding>
+        <p>Our one-stop solution provides the entire spectrum of services involved in the life cycle of a project
+          implementation: from planning and design, to installation, validation, as well as commissioning and service
+          and
+          maintenance.</p>
+
+        <p>We subject our service process to stringent quality checks and reviews, through our proprietary methodology
+          of
+          “<strong>Plan</strong>”, “<strong>Execute</strong>” and “<strong>Review</strong>”.</p>
+
+        <p>Through such streamlining and standardization of workflow, we ensure that we always deliver to the same
+          exacting
+          standards and benchmarks that customers have come to expect of Active Fire time after time.</p>
+      </div>
+
+    </div>
+
+    <div *ngSwitchCase="'portfolio'">
+
+      <article class="post">
+        <img src="assets/images/port1.jpg" style="width: 100%">
+        <div padding class="post-info">
+          <h6>Changi Airport Terminal 4 At Changi
+            <p>Takenaka Corporation</p>
+          </h6>
+          <p>Beca Carter Hollings & Ferner (S.E. Asia) Pte Ltd</p>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="assets/images/port2.jpg" style="width: 100%">
+        <div padding class="post-info">
+          <h6>Victoria Theatre Refurbishment
+            <p>Sato Kogyo (S) Pte Ltd</p>
+          </h6>
+          <p>T.Y. Lin International Pte Ltd</p>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="assets/images/port3.jpg" style="width: 100%">
+        <div padding class="post-info">
+          <h6>MOM Headquarters For Ministry Of Manpower
+            <p>Santaril Construction</p>
+          </h6>
+          <p>UPC Consultants</p>
+        </div>
+      </article>
+
+    </div>
+
+
+  </div>
+
+
+</ion-content>
+
+
+<ion-footer>
+  <a href="https://www.firestore.com.sg/" class="visit-firestore-webiste">Visit Site</a>
+</ion-footer>

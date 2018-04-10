@@ -1,0 +1,122 @@
+.tab-button {
+  font-size: 11px !important;
+  overflow: visible;
+  .tab-button-text, .tab-button-icon {
+    overflow: visible;
+  }
+  &:nth-child(1) {
+    ion-icon::before {
+      background: url(../assets/images/home.png) no-repeat;
+      content: '';
+      display: block;
+      width: 25px;
+      height: 25px;
+      margin: 0 auto;
+      background-size: cover;
+    }
+  }
+  &:nth-child(2) {
+    ion-icon::before {
+      background: url(../assets/images/news.png) no-repeat;
+      content: '';
+      display: block;
+      width: 25px;
+      height: 25px;
+      margin: 0 auto;
+      background-size: cover;
+    }
+  }
+  &:nth-child(3) {
+    ion-icon {
+      margin-top: -37px;
+      height: 65px !important;
+    }
+    ion-icon::before {
+      color: $appRed;
+      border: $appRed 1px solid;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      border-radius: 50%;
+      background: #ffffff;
+      font-size: 30px;
+      margin-bottom: 7px;
+      content: "\f13e";
+    }
+    .tab-button-text {
+      margin: 0 !important;
+    }
+  }
+  &:nth-child(4) {
+    ion-icon::before {
+      background: url(../assets/images/safety-tips.png) no-repeat;
+      content: '';
+      display: block;
+      width: 29px;
+      height: 25px;
+      margin: 0 auto;
+      background-size: cover;
+    }
+  }
+  &:nth-child(5) {
+    ion-icon::before {
+      background: url(../assets/images/store.png) no-repeat;
+      content: '';
+      display: block;
+      width: 31px;
+      height: 25px;
+      margin: 0 auto;
+      background-size: cover;
+    }
+  }
+}
+
+.tabs-ios {
+  .tab-button-text {
+    margin-bottom: 5px;
+  }
+}
+
+.tab-button:hover:not(.disable-hover), .tab-button[aria-selected=true] {
+  color: $appRed;
+  &:nth-child(1) {
+    ion-icon::before {
+      background-image: url(../assets/images/home-active.png);
+    }
+  }
+  &:nth-child(2) {
+    ion-icon::before {
+      background-image: url(../assets/images/news-active.png);
+    }
+  }
+  &:nth-child(3) {
+    ion-icon::before {
+      color: #fff !important;
+      border: $appRed 1px solid;
+      background: $appRed;
+    }
+  }
+  &:nth-child(4) {
+    ion-icon::before {
+      background-image: url(../assets/images/safety-tips-active.png);
+    }
+  }
+  &:nth-child(5) {
+    ion-icon::before {
+      background-image: url(../assets/images/store-active.png);
+    }
+  }
+}
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-md .tab-button[aria-selected=true],
+.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true] {
+  color: $appRed !important;
+  opacity: 1;
+}
+
+.tabs-md .tab-button-text,
+.tabs-ios .tab-button-text {
+  font-size: 11px;
+}
+

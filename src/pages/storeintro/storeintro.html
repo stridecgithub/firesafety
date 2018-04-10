@@ -1,0 +1,109 @@
+<!--
+  Generated template for the StoreintroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton class="nav-bar">
+    <button ion-button icon-only clear (click)="gotoSettings()" class="left-btn">
+      <ion-icon name="ios-settings-outline"></ion-icon>
+    </button>
+    Store
+    <button ion-button icon-only clear class="right-btn" (click)="gotoIntroduction()">
+      <ion-icon name="ios-information-circle-outline"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+
+  <div id="tabs">
+    <ion-segment [(ngModel)]="tabs">
+      <ion-segment-button value="store-intro">
+        Introduction
+      </ion-segment-button>
+      <ion-segment-button value="promotion">
+        Promotion
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+
+  <div [ngSwitch]="tabs">
+
+    <div *ngSwitchCase="'store-intro'">
+      <div class="store-logo">
+        <img src="assets/images/fire-store-logo.png">
+      </div>
+
+      <div class="store-intro">
+        <p>FireStore is the biggest and most comprehensive online store in Southeast Asia for all things related to fire
+          safety awareness and protection.</p>
+      </div>
+
+      <div class="store-cta">
+        <div class="cta">
+          <a href="https://www.firestore.com.sg/">
+            <p>Shop @ FireStore</p>
+            <p class="cta-info"><img src="assets/images/arrow-frwd.png">Get all your home fire safety essentials
+              delivered
+              to your home.</p>
+          </a>
+        </div>
+        <hr>
+        <div class="cta">
+          <a href="https://www.firestore.com.sg/training.html">
+            <p>Learn @ FireStore</p>
+            <p class="cta-info"><img src="assets/images/arrow-frwd.png">Equip yourself with the basic knowledge on how
+              to
+              respond to fire emergency and safe use of fire safety equipments.</p>
+          </a>
+        </div>
+      </div>
+      <div class="store-helpline">
+        <img src="assets/images/helpline.png">
+        <div class="fire-bundle">
+          <a
+            href="https://www.firestore.com.sg/home-fire-safety/home-small-business-bundles/home-fire-safety-bundle.html">
+            <button ion-button full color="fireRed">Get A Home Fire Safety Bundle</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'promotion'">
+      <!--<div id="promo-wrap">
+        <article class="post">
+          <a href="https://www.firestore.com.sg/national-day-promotions.html/">
+            <img src="assets/images/promo1.jpg" style="width: 100%">
+            <div padding class="post-info">
+              <img src="assets/images/arrow-frwd.png">
+              <h6>FireStore National Day Special</h6>
+              <p>01 Jul 2017 ~ 31 Aug 2017</p>
+            </div>
+          </a>
+        </article>
+        <article class="post">
+          <a href="https://www.firestore.com.sg/national-day-promotions.html/">
+            <img src="assets/images/promo2.jpg" style="width: 100%">
+            <div padding class="post-info">
+              <img src="assets/images/arrow-frwd.png">
+              <h6>FireStore Launch Promotion</h6>
+              <p>08 Jun 2017 ~ 31 Jul 2017</p>
+            </div>
+          </a>
+        </article>
+      </div>-->
+      <div style="overflow:auto;-webkit-overflow-scrolling:touch">
+        <iframe style="width:100%;height:600px; border:none" [src]="promoContentURL"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+
+</ion-content>
+

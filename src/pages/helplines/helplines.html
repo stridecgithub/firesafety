@@ -1,0 +1,33 @@
+<!--
+  Generated template for the HelplinesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton class="nav-bar">
+    <button ion-button icon-only clear (click)="gotoSettings()" class="left-btn">
+      <ion-icon name="ios-settings-outline"></ion-icon>
+    </button>
+    Helplines
+    <button ion-button icon-only clear class="right-btn" (click)="gotoIntroduction()">
+      <ion-icon name="ios-information-circle-outline"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="helpline-intro">
+    Tap on numbers to make an emergency call.
+  </div>
+  <!--<button id="sos-msg" (click)="sendHelpMessage()">-->
+    <!--<ion-icon name="phone-portrait"></ion-icon>-->
+    <!--HELP-->
+    <!--<div class="sos">Send SOS Distress Signal</div>-->
+  <!--</button>-->
+  <a class="helpline" href="tel:999"><ion-icon ios="ios-call-outline" md="md-call"></ion-icon> 999 <span>Police Emergency</span></a>
+  <a class="helpline" href="tel:995"><ion-icon ios="ios-call-outline" md="md-call"></ion-icon> 995 <span>Ambulance and Fire</span></a>
+  <a class="helpline secondary-phone" href="tel:1777"><ion-icon ios="ios-call-outline" md="md-call"></ion-icon> 1777 <span>Non-Emergency Ambulance</span></a>
+  <a class="helpline secondary-phone" href="tel:18002550000"><ion-icon ios="ios-call-outline" md="md-call"></ion-icon> 1800 255 0000 <span>Police Hotline</span></a>
+</ion-content>

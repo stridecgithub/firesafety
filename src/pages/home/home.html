@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar hideBackButton class="nav-bar">
+    <button ion-button icon-only clear (click)="gotoSettings()" class="left-btn">
+      <ion-icon name="ios-settings-outline"></ion-icon>
+    </button>
+    Home
+    <button ion-button icon-only clear class="right-btn" (click)="gotoIntroduction()">
+      <ion-icon name="ios-information-circle-outline"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div id="welcome-text">
+    Welcome to
+    <span>Fire Safety Matter</span>
+  </div>
+  <div id="cta">
+    <div class="row">
+      <button ion-button class="cta1" (click)="gotoWhatsOn()">
+        <img width="80" src="assets/images/whatson.png">
+        <span>What's On</span>
+      </button>
+      <button ion-button class="cta2" (click)="gotoPromotion()">
+        <img width="80" src="assets/images/coupon.png">
+        <span>Latest<br>Promotions</span>
+      </button>
+    </div>
+    <div class="row">
+      <button ion-button class="cta3" (click)="gotoSafetyTips()" >
+        <img width="60" src="assets/images/article.png">
+        <span>Fire Safety<br>Articles & Tips</span>
+      </button>
+      <button ion-button class="cta4" (click)="gotoHowSafe()">
+        <img width="50" src="assets/images/promo.png">
+        <span>How Safe is<br>My Home?</span>
+      </button>
+    </div>
+  </div>
+  <div id="like-follow">
+    <span>Like and Follow FireStore</span>
+    <a href="https://www.facebook.com/firestoresg/"><img style="width:20px; height: auto;" src="assets/images/fb.png"> </a>
+    <a href="https://www.instagram.com/firestoresg/"><img style="width:38px; height: auto;" src="assets/images/in.png"> </a>
+    <a href="https://plus.google.com/109428834491309770089"><img style="width:58px; height: auto;" src="assets/images/gl.png"> </a>
+  </div>
+</ion-content>
+

@@ -1,0 +1,49 @@
+page-contactfeedback {
+
+  .top {
+    text-align: center;
+    p {
+      line-height: 25px;
+    }
+    span {
+      color: #ED1C24;
+    }
+  }
+
+  .pride-text {
+    line-height: 19px;
+  }
+
+  .contact-form {
+    span {
+      color: #ED1C24;
+    }
+
+    .submit-button {
+      border-radius: 5px;
+      span {
+        color: #FFFFFF !important;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .like-app{
+    border-top: solid 1px #979797;
+    background-color: #FAFAFA;
+    button {
+      border-radius: 5px;
+      border: solid 1px #ED1C24;
+      box-shadow: none !important;
+      span {
+        color: #ED1C24;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 18px;
+      }
+    }
+  }
+
+}

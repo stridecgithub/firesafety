@@ -1,0 +1,41 @@
+page-news {
+  #ft-news {
+    p {
+      margin: 0;
+    }
+    strong {
+      color: #000000;
+      display: block;
+    }
+    span {
+      padding-top: 3px;
+      display: block;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  .post {
+    .post-info {
+      p {
+        line-height: 18px;
+      }
+      img {
+        width: 25px;
+        margin-top: 5px;
+      }
+    }
+  }
+  .what-on-date {
+    float: left;
+    font-size: 32px;
+    color: $appGrey;
+    margin-right: 10px;
+    line-height: 29px;
+    span {
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      color: $appRed;
+    }
+  }
+}

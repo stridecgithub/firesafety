@@ -1,0 +1,103 @@
+<!--
+  Generated template for the NewsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton class="nav-bar">
+    <button ion-button icon-only clear (click)="gotoSettings()" class="left-btn">
+      <ion-icon name="ios-settings-outline"></ion-icon>
+    </button>
+    FIRE News
+    <button ion-button icon-only clear class="right-btn" (click)="gotoIntroduction()">
+      <ion-icon name="ios-information-circle-outline"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div id="tabs">
+    <ion-segment [(ngModel)]="tabs">
+      <ion-segment-button value="whats-on">
+        What's On
+      </ion-segment-button>
+      <ion-segment-button value="on-the-news">
+        On The News
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="tabs">
+
+    <div *ngSwitchCase="'whats-on'">
+
+      <ion-list>
+        <ion-item *ngFor="let postItem of postList">
+
+          <article class="post">
+            <img [src]="postItem.postThumb" style="width: 100%" >
+            <div padding class="post-info">
+              <img src="assets/images/arrow-frwd.png" (click)="gotoArticleDetail(postItem.postID)">
+              <div class="what-on-date">
+                {{postItem.postDay}}<span>{{postItem.postMonth.toUpperCase()}}</span>
+              </div>
+              <h6>{{postItem.postTitle}}
+                <p>{{postItem.postDate}} </p>
+              </h6>
+              <p>HDB Hub @ Toa Payoh Central</p>
+            </div>
+          </article>
+
+        </ion-item>
+      </ion-list>
+
+    </div>
+
+    <div *ngSwitchCase="'on-the-news'">
+
+      <div id="ft-news">
+        <img src="assets/images/ft-news.jpg" style="width: 100%;">
+        <div padding>
+          <p><strong>Camden Flats Evacuation Sees 83 Residents Refuse To Leave Chalcots Estate Amid Fire Safety
+            Concerns</strong>
+            <span>By ALEX TUDELA · 5 May 2017<br>Yahoo News</span>
+          </p>
+        </div>
+      </div>
+      <div id="news-posts">
+        <article class="news-post" padding>
+          <img src="assets/images/news1.jpg" style="width: 100px">
+          Enhance Your Life By Having A Sense Of Purpose
+          <span>27 Mar 2017 · Google News</span>
+        </article>
+        <article class="news-post" padding>
+          <img src="assets/images/news2.jpg" style="width: 100px">
+          Why Re Invent The Light Bulb
+          <span>19 Jul 2017 · Yahoo News</span>
+        </article>
+        <article class="news-post" padding>
+          <img src="assets/images/news3.jpg" style="width: 100px">
+          Increasing Prosperity With Positive Thinking
+          <span>29 Jul 2017 · Straits Times Singapore</span>
+        </article>
+        <article class="news-post" padding>
+          <img src="assets/images/news4.jpg" style="width: 100px">
+          The Power of Notes
+          <span>23 Dec 2017 · Straits Times Singapore</span>
+        </article>
+        <article class="news-post" padding>
+          <img src="assets/images/news5.jpg" style="width: 100px">
+          Hypnosis 12 Steps To Acquire Mind Power
+          <span>08 Oct 2017 · BBC News</span>
+        </article>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</ion-content>
