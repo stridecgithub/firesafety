@@ -21,7 +21,7 @@
   <div id="navigation">
     <button (click)="gotoAbout()"><img src="assets/images/arrow-frwd.png">About Us</button>
     <button>
-      <ion-toggle color="appGreen" checked="true" class="notification-toggle"></ion-toggle>
+      <ion-toggle color="appGreen" checked="true" class="notification-toggle" (ionChange)="notificationonoff($event,onoffsettings)" [(ngModel)]="onoffsettings" ></ion-toggle>
       Notifications
     </button>
     <!-- <button (click)="gotoTerms()"><img src="assets/images/arrow-frwd.png">Term of Use</button> -->

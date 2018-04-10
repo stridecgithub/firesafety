@@ -24,7 +24,7 @@ import {TabsPage} from "../pages/tabs/tabs";
 import {HowSafePage} from "../pages/how-safe/how-safe";
 import {HttpModule} from "@angular/http";
 import {ArticleDetailPage} from "../pages/article-detail/article-detail";
-
+import { Push } from '@ionic-native/push';
 @NgModule({
   declarations: [
     MyApp,
@@ -74,6 +74,7 @@ import {ArticleDetailPage} from "../pages/article-detail/article-detail";
     AndroidPermissions,
     Geolocation,
     SMS,
+    Push,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
